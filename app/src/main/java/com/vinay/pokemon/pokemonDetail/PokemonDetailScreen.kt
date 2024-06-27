@@ -106,7 +106,7 @@ fun PokemonDetailScreen(
             if(pokemonInfo is Resource.Success) {
                 pokemonInfo.data?.sprites?.let {
                     AsyncImage(
-                        model = "https://i.ibb.co/DG0GRmB/1.png",
+                        model = "https://storage.googleapis.com/pokemonmini/${pokemonInfo.data.id}.png",
                         contentDescription = pokemonInfo.data.name,
                         modifier = Modifier
                             .size(pokemonImageSize)
@@ -141,7 +141,7 @@ fun PokemonDetailTopSection(
             contentDescription = null,
             tint = Color.White,
             modifier = Modifier
-                .size(36.dp)
+                .size(50.dp)
                 .offset(16.dp, 16.dp)
                 .clickable {
                     navController.popBackStack()

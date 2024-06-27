@@ -150,10 +150,9 @@ fun PokedexEntry(
                 model = ImageRequest
                     .Builder(LocalContext.current)
                     .crossfade(true)
-                    .data("https://i.ibb.co/DG0GRmB/1.png")
+                    .data("https://storage.googleapis.com/pokemonmini/${entry.number}.png")
                     .build(),
                 onSuccess = { data ->
-                    println(data)
                     viewModel.calcDominantColor(data.result.drawable) { color ->
                         dominantColor = color
                     }

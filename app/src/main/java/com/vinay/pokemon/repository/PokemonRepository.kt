@@ -1,5 +1,4 @@
 package com.vinay.pokemon.repository
-//
 import com.vinay.pokemon.data.remote.PokeApi
 import com.vinay.pokemon.data.remote.responses.Pokemon
 import com.vinay.pokemon.data.remote.responses.PokemonList
